@@ -1,9 +1,10 @@
 <p>user-card-component works!</p>
-<img [src]="avatarUrl" alt="User Avatar" class="avatar" />
-<p> Cette femme de renom s'appelle {{ name }}</p>
-<p>Son métier est {{ jobTitle }}</p>
+<img [src]="user.avatarUrl" alt="User Avatar" class="avatar" />
+<p> Cette femme de renom s'appelle {{ user.name }}</p>
+<p>Son métier est {{ user.jobTitle }}</p>
 
 <label for="quote">Citation la concernant :</label>
-<input type="text" [(ngModel)]="quote" />
+<input type="text" [(ngModel)]="user.quote" />
 
-<p>La citation est : "{{ quote }}"</p>
+<p>La citation est : "{{ user.quote }}"</p>
+<button (click)="onDeleteClick()">Supprimer</button>

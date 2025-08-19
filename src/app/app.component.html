@@ -249,7 +249,7 @@
         </a>
       </div>
     </div>
-    <app-user-card-component></app-user-card-component>
+    <app-user-card-component [user]="mainUser" (deleteRequest)="handleUserDelete($event)"></app-user-card-component>
   </div>
 </main>
 
