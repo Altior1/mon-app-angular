@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './compt/header/header.component';
 import { UserCardComponentComponent, User } from './compt/user-card-component/user-card-component.component';
+import { ToDoListComponent } from './compt/to-do-list/to-do-list.component';
+import { TodoItemComponent } from './compt/todo-item/todo-item.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, UserCardComponentComponent],
+  imports: [RouterOutlet, HeaderComponent, UserCardComponentComponent, ToDoListComponent, TodoItemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -23,5 +25,7 @@ export class AppComponent {
     alert(`Le parent a reçu une demande de suppression pour l'utilisateur avec l'ID : ${userId}`);
     // Ici, on mettrait la logique pour supprimer l'utilisateur de notre liste.
   }
+
+
 
 }
