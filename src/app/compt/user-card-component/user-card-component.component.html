@@ -1,0 +1,9 @@
+<p>user-card-component works!</p>
+<img [src]="avatarUrl" alt="User Avatar" class="avatar" />
+<p> Cette femme de renom s'appelle {{ name }}</p>
+<p>Son métier est {{ jobTitle }}</p>
+
+<label for="quote">Citation la concernant :</label>
+<input type="text" [(ngModel)]="quote" />
+
+<p>La citation est : "{{ quote }}"</p>
