@@ -1,0 +1,11 @@
+<p>Les produits disponibles</p>
+
+@if(product1){
+<p>{{ product1.name }} - {{ product1.getFileSize() }} Mo</p>
+}
+
+@if(product2){
+<p>{{ product2.name }} - {{ product2.getWeight() }} kg</p>
+}
+
+{{ product1.releaseDate | date }}

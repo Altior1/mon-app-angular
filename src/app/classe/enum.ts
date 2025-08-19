@@ -1,4 +1,5 @@
 export interface Product {
+    releaseDate: Date;
     id: number;
     name: string;
     type: ProductType;
@@ -15,12 +16,14 @@ export class PhysicalProduct implements PhysicalProductInterface {
     id: number;
     name: string;
     type: ProductType.PHYSICAL = ProductType.PHYSICAL;
+    releaseDate: Date;
 
 
-    constructor(weight: number, id: number, name: string) {
+    constructor(weight: number, id: number, name: string, date: Date) {
         this.weight = weight;
         this.id = id;
         this.name = name;
+        this.releaseDate = date;
     }
 
     getWeight(): number {
@@ -39,12 +42,14 @@ export class DigitalProduct implements DigitalProductInterface {
     id: number;
     name: string;
     type: ProductType.DIGITAL = ProductType.DIGITAL;
+    releaseDate: Date;
 
 
-    constructor(fileSize: number, id: number, name: string) {
+    constructor(fileSize: number, id: number, name: string, date: Date) {
         this.fileSize = fileSize;
         this.id = id;
         this.name = name;
+        this.releaseDate = date;
     }
 
 

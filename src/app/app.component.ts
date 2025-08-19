@@ -4,10 +4,13 @@ import { HeaderComponent } from './compt/header/header.component';
 import { UserCardComponentComponent, User } from './compt/user-card-component/user-card-component.component';
 import { ToDoListComponent } from './compt/to-do-list/to-do-list.component';
 import { TodoItemComponent } from './compt/todo-item/todo-item.component';
+import { DigitalProduct, PhysicalProduct } from './classe/enum';
+import { ProductCardComponent } from './compt/product-card/product-card.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, UserCardComponentComponent, ToDoListComponent, TodoItemComponent],
+  imports: [RouterOutlet, HeaderComponent, UserCardComponentComponent, ToDoListComponent, TodoItemComponent, ProductCardComponent, DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
