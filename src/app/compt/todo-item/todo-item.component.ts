@@ -14,4 +14,10 @@ export class TodoItemComponent {
     console.log("Delete request for todo:", this.todo);
     this.deleteToDo.emit(this.todo.id);
   }
+  @Output() toggleToDo: EventEmitter<ToDo> = new EventEmitter<ToDo>();
+  public onToggleClick(): void {
+    console.log("Toggle request for todo:", this.todo);
+    this.toggleToDo.emit(this.todo);
+  }
+
 }
